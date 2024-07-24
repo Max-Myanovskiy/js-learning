@@ -29,7 +29,7 @@ while (isSunk == false) {
         location1 = 0;
       } else if (guess == location2) {
         location2 = 0;
-      } else {
+      } else if (guess == location3) {
         location3 = 0;
       }
       if (hits == 3) {
