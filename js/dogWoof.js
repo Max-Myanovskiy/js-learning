@@ -91,6 +91,18 @@ timer();
 
 let myButton = document.querySelector("#myButton");
 myButton.addEventListener("click", doSomething, false);
+let counter = 0;
 function doSomething(e) {
-  alert("Is this working?");
+  //   alert("Is this working?");
+  //   console.log("We clicked on: " + e.target.id);
+  counter++;
+  console.log("Button clicked " + counter + " times!");
+  if (counter == 3) {
+    showMore();
+  }
+}
+
+function showMore() {
+  console.warn("This is a warning!");
+  console.error("This is an error!");
 }
